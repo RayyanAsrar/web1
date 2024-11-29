@@ -1,0 +1,259 @@
+/* @font-face {
+    font-family: roboto;
+    src: url(assets/fonts/Roboto/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: roboto-bold;
+    src: url(assets/fonts/Roboto/Roboto-Bold.ttf);
+}
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width:100%;
+    height: 100vh;
+    background-image: url(assets/images/image\ 149.jpg);
+    
+}
+.icons{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+    padding-right: 100px;
+    
+}
+.icons img {
+    padding-left:20px;
+    padding-right:20px;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+
+}
+.logo{
+    cursor: pointer;
+    
+}
+.navbar ul{
+    list-style: none;
+    
+}
+.navbar ul li{
+    display: inline-block;
+    padding: 0px 20px;
+    
+}
+.navbar ul li a{
+    color: white;
+}
+
+
+.textwrap {
+    display: flex; 
+    flex-direction: column; 
+    gap: 30px; 
+    align-items: flex-start; 
+    padding-left: 130px;
+    padding-top: 80px;
+}
+
+
+.textwrap .para {
+    max-width: 350px; 
+    line-height: 1.5; 
+}
+
+.textwrap a {
+    display: inline-block; 
+    padding: 10px 20px;
+    background-color: #007BFF; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold; 
+
+
+
+}
+.heading1{
+    font-family: roboto;
+    font-size: 62px;
+    font-weight: bold;
+}
+.heading2{
+    font-family: roboto-bold;
+    font-size: 50px;
+}
+.para{
+    font-family: roboto;
+} */
+
+@font-face {
+    font-family: roboto;
+    src: url(assets/fonts/Roboto/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: roboto-bold;
+    src: url(assets/fonts/Roboto/Roboto-Bold.ttf);
+}
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/images/image\ 149.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 5%;
+}
+.icons img {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 24px; /* Adjust icon size for better responsiveness */
+    height: 24px;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+.logo {
+    cursor: pointer;
+}
+.navbar ul {
+    list-style: none;
+}
+.navbar ul li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+.navbar ul li a {
+    color: white;
+    font-size: 16px; /* Ensure text scales for smaller screens */
+}
+.textwrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 50px 5%; /* Adjust padding for better spacing */
+}
+.textwrap .para {
+    max-width: 30%; /* Adjust width to fit smaller screens */
+    line-height: 1.5;
+}
+.textwrap a {
+    text-align: center;
+    height: 40px;
+    font-family: roboto;
+    width: 200px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4776E6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.heading1 {
+    font-family: roboto;
+    font-size: 48px; /* Reduce size for smaller screens */
+    font-weight: bold;
+    color: white;
+}
+.heading2 {
+    font-family: roboto-bold;
+    font-size: 40px;
+    color: white;
+}
+.para {
+    font-family: roboto;
+    color: white;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {
+    .navbar ul li a {
+        font-size: 14px;
+    }
+    .textwrap {
+        padding: 40px 5%;
+        gap: 15px;
+    }
+    .heading1 {
+        font-size: 42px;
+    }
+    .heading2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar ul li {
+        display: block;
+        padding: 10px 0;
+    }
+    .icons {
+        justify-content: center;
+        padding: 10px 0;
+    }
+    .textwrap {
+        padding: 30px 5%;
+    }
+    .heading1 {
+        font-size: 36px;
+    }
+    .heading2 {
+        font-size: 30px;
+    }
+    .para {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul li a {
+        font-size: 12px;
+    }
+    .icons img {
+        width: 20px;
+        height: 20px;
+    }
+    .textwrap {
+        padding: 20px 5%;
+    }
+    .heading1 {
+        font-size: 30px;
+    }
+    .heading2 {
+        font-size: 24px;
+    }
+    .para {
+        font-size: 12px;
+    }
+    .textwrap a {
+        padding: 8px 16px;
+    }
+}
